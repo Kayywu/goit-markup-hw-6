@@ -125,7 +125,7 @@ body {
     fill: var(--accent-color);
 }
 
-.links .main-contact-agency {
+.links {
     position: relative;
 }
 
@@ -136,7 +136,7 @@ body {
     border-radius: 2px;
     width: 53px;
     height: 4px;
-    left: 0px
+    left: 0px;
 }
 
 
