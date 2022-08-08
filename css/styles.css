@@ -125,6 +125,10 @@ body {
     fill: var(--accent-color);
 }
 
+.links .main-contact-agency {
+    position: relative;
+}
+
 .main-contact-agency::after {
     content: "";
     position: absolute;
@@ -132,8 +136,7 @@ body {
     border-radius: 2px;
     width: 53px;
     height: 4px;
-    left: 362px;
-    top: 76px;
+    left: 0px
 }
 
 
