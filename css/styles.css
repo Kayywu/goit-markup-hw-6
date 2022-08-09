@@ -137,7 +137,9 @@ body {
     width: 53px;
     height: 4px;
     left: 0px;
+    top: 48px;
 }
+
 
 
 
@@ -287,6 +289,9 @@ body {
     align-items: center;
     border-radius: 50%;
     fill: var(--client-list-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icons li:hover,
@@ -371,6 +376,9 @@ body {
     padding-right: 32px;
     padding-top: 17.71px;
     padding-bottom: 14.25px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -488,12 +496,15 @@ body {
     gap: 10px;
     display: flex;
     fill: var(--white-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info-socials li:hover,
 .footer-info-socials li:focus {
     background-color: var(--accent-color);
-    color: var(--white-color);
+    fill: var(--white-color);
     cursor: pointer;
 }
 
@@ -506,8 +517,8 @@ body {
     width: 58px;
     background: var(--accent-color);
     border-radius: 2px;
-    top: 76px;
-    left: 461px;
+    top: 48px;
+    left: 0px
 }
 
 .all-buttons-nav {
