@@ -289,7 +289,7 @@ body {
     align-items: center;
     border-radius: 50%;
     fill: var(--client-list-color);
-    transition-property: fill;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -440,6 +440,9 @@ body {
     line-height: 1.7;
     vertical-align: top;
     letter-spacing: 0.25px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -496,7 +499,7 @@ body {
     gap: 10px;
     display: flex;
     fill: var(--white-color);
-    transition-property: fill;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -505,6 +508,7 @@ body {
 .footer-info-socials li:focus {
     background-color: var(--accent-color);
     cursor: pointer;
+    fill: var(--white-color);
 }
 
 /* PORTFOLIO */
@@ -549,7 +553,7 @@ body {
 
 
 .all-buttons-nav button {
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
