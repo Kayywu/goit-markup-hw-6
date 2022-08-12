@@ -115,6 +115,8 @@ body {
 }
 
  .icon-contact {
+    height: 14px;
+    width: 18px;
     margin-right: 10px;
     transition-property: fill;
     transition-duration: 250ms;
@@ -139,6 +141,7 @@ body {
     left: 0px;
     top: 48px;
 }
+
 
 
 
@@ -435,6 +438,7 @@ body {
 .adress-info .adress-tel {
     text-decoration: none;
     color: #ffffff99;
+    font-style: normal;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
