@@ -763,14 +763,19 @@ body {
 
 
 .modal-form-blanks {
-    display: block;
+    position: relative;
     margin-bottom: 10px;
-}
-
-.modal-form-blanks {
     margin-left: 40x;
     margin-right: 40px;
 }
+
+
+.modal-form-icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+}
+
 
 
 .modal-form-blanks span {
