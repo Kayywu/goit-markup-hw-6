@@ -516,8 +516,10 @@ body {
 /* NEWSLETTER FOOTER */
 
 
-.footer-newsletter {
+.footer-newsletter form {
     display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 
@@ -578,6 +580,9 @@ body {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    position: relative;
+    margin-right: 110px;
+    padding: 10px 60px 10px 40px;
 }
 
 
@@ -587,6 +592,13 @@ body {
 
 .newsletter-btn svg {
     margin-left: 24px;
+}
+
+.btn-pic {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+    fill: var(--white-color);
 }
 
 
@@ -916,12 +928,6 @@ body {
 }
 
 
-
-.user-policy {
-    margin-bottom: 30px;
-    position: relative;
-}
-
 .user-policy span {
     font-family: 'Roboto';
     font-style: normal;
@@ -935,13 +941,15 @@ body {
 
 
 .user-policy::before {
+    position: absolute;
     content: "";
     display: block;
     width: 16px;
     height: 16px;
     border: 2px solid black;
     border-radius: 4px;
-    margin-left: 54px;
+    top: 4px;
+    left: 54px;   
 }
 
 .modal-form-policy:checked + .user-policy::before {
