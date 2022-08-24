@@ -517,7 +517,7 @@ body {
 
 
 .footer-newsletter {
-    display: inline-flex
+    display: flex;
 }
 
 
@@ -578,8 +578,8 @@ body {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-
 }
+
 
 .newsletter-btn:active {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
@@ -789,20 +789,22 @@ body {
     position: relative;
     width: 100%;
     margin: 0 0 20px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-blanks:hover {
+    fill: var(--accent-color);
+}
+
+.modal-form-blank:focus {
+    fill: var(--accent-color);
+}
 
 .modal-form-icon {
     position: absolute;
     top: 29px;
     left: 50px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-icon:active {
-    color: var(--accent-color);
-}
-
 
 
 .modal-form-blanks span {
@@ -833,6 +835,7 @@ body {
 .modal-form-input:focus-within {
     border-color: var(--accent-color);
 }
+
 
 .modal-form label {
     position: relative;
@@ -877,7 +880,9 @@ body {
     color: #75757580
 }
 
-
+.form-checkbox {
+    position: relative;
+}
 
 .modal-form-policy {
     font-family: 'Roboto';
@@ -887,6 +892,8 @@ body {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--descriptions-color);
+    position: absolute;
+   
 }
 
 .modal-form-links {
@@ -905,8 +912,15 @@ body {
     cursor: pointer;
     margin-left: 164px;
     margin-bottom: 40px; 
+    margin-top: 20px;
 }
 
+
+
+.user-policy {
+    margin-bottom: 30px;
+    position: relative;
+}
 
 .user-policy span {
     font-family: 'Roboto';
@@ -928,7 +942,6 @@ body {
     border: 2px solid black;
     border-radius: 4px;
     margin-left: 54px;
-
 }
 
 .modal-form-policy:checked + .user-policy::before {
